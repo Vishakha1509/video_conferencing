@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video conferencing website</title>
+    <link rel="stylesheet" href="video_conferencing.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div id="navigation">
+                <nav>
+
+                    <ul>
+                        <li><img src="image/user.png"></li>
+                        <li><img src="image/mic.png"></li>
+                        <li><img src="image/hand.png"></li>
+                        <li><img src="image/chat.png" onclick="chats()"></li>
+                        <li><img src="image/notification.png"></li>
+                        <li><img src="image/share.png"></li>
+                        <li><img src="image/setting.png" style="background-color: aliceblue;"></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="video-container">
+                <video id="video" autoplay muted></video>
+            </div>
+            <div id="chat-box">
+                <div class="head">
+                    <h2>chat</h2>
+                </div>
+
+                <div id="message">
+                </div>
+                <div class="input-box">
+                    <textarea id="start" placeholder="Start Chat"></textarea>
+                    <button id="send" onclick="send()">Send</button>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+
+            <a id="start-call" type="button">Start Call</a>
+            <a id="end-call" type="button">End Call</a>
+        </div>
+    </div>
+    </div>
+
+    <script src="video_conferencing.js"></script>
+</body>
+
+</html>
